@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTT Trailblazer</title>
+    <title>TT Trailblazer</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #fdfdfd;
             background: linear-gradient(to bottom, #1c1c1c, #0f0f0f);
-            overflow-x: hidden;
+            color: #fdfdfd;
         }
 
         header {
@@ -22,19 +21,35 @@
         header h1 {
             font-size: 3em;
             color: #ffd700;
-            font-family: 'Georgia', serif;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .hero {
-            position: relative;
             background: url('https://your-image-link.jpg') no-repeat center center/cover;
             height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             text-align: center;
-            color: #fff;
         }
 
         .hero h2 {
@@ -56,33 +71,15 @@
             color: #000;
             background: #ffd700;
             border: none;
-            cursor: pointer;
             border-radius: 5px;
-            transition: 0.3s;
+            cursor: pointer;
         }
 
         .hero .cta:hover {
             background: #ffcc33;
         }
 
-        .content-section {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .content-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #ffd700;
-        }
-
-        .content-section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            color: #ccc;
-        }
-
-        .footer {
+        footer {
             background: rgba(0, 0, 0, 0.9);
             padding: 20px;
             text-align: center;
@@ -92,26 +89,24 @@
 </head>
 <body>
     <header>
-        <h1>TT Trailblazer</h1>
+        <h1>TTT Trailblazer</h1>
     </header>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="history.html">History</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <div class="hero">
-        <h2>Rising Above Adversity</h2>
-        <p>From the depths of apocalyptic challenges, resilience emerges stronger than ever.</p>
-        <button class="cta">Discover More</button>
+        <h2>Welcome to TT Trailblazer</h2>
+        <p>Rising above challenges to innovate and inspire.</p>
+        <a href="about.html" class="cta">Learn More</a>
     </div>
 
-    <section class="content-section">
-        <h2>The Vision</h2>
-        <p>We blend ancient wisdom with cutting-edge technology to illuminate the path forward. TT Trailblazer is not just a brand; it's a movement of resilience, hope, and innovation.</p>
-    </section>
-
-    <section class="content-section">
-        <h2>The Symbol</h2>
-        <p>The pyramid represents strength, the Eye of Horus signifies clarity, and the rising figure embodies the relentless spirit of humanity. Together, they tell a story of overcoming life's apocalyptic moments.</p>
-    </section>
-
-    <footer class="footer">
+    <footer>
         <p>&copy; 2025 TT Trailblazer. All rights reserved.</p>
     </footer>
 </body>
